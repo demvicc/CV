@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Nunito:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09092f4c96.js" crossorigin="anonymous"></script>
+    <title>CV, Viktar Dzemidovich</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#contact">&#35;Contact</a></li>
+                    <li><a href="#about">&#35;About</a></li>
+                    <li><a href="#skills">&#35;Skills</a></li>
+                    <li><a href="#code">&#35;Code</a></li>
+                    <li><a href="#projects">&#35;Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="mainScreen">
+                <img src="images/pfp.png" alt="Viktar">
+                <div class="pfpText">
+                    <h1>Viktar Dzemidovich</h1>
+                    <h2>Front-End Web Developer (Beginner)</h2>
+                </div>
+            </div>
+            
+            <div class="contact" id="contact">
+                <h2>Contact information</h2>
+                <ul>
+                    <li><p class="red">Phone number:</p><a href="tel:+375256884039">+375256884039</a></li>
+                    <li><p class="red">Email:</p><a href="mailto:demvicc@gmail.com" target="_blank">demvicc@gmail.com</a></li>
+                    <li><p class="red">Telegram:</p><a href="https://t.me/demvicc" target="_blank">&commat;demvicc</a></li>
+                    <li><p class="red">GitHub:</p><a href="https://github.com/demvicc" target="_blank">&commat;demvicc</a></li>
+                </ul>
+            </div>
+
+            <div class="about" id="about">
+                <div class="abtme">
+                    <h2>About me</h2>
+                    <p>
+                    I'm a 20 years old student who's currently studying in BNTU.
+                    Creating visually beautiful things has always been my passion and
+                    Front-end gives me opportunity to follow it.
+                    My goal is to become a professional in the field of Front-end.
+                    </p>
+                </div>
+                
+                <h3>Education</h3>
+                <div class="education">
+                    <div class="university">
+                        <p>University:</p>
+                        <ul class="uni">
+                            <li><a href="https://bntu.by">Belarusian National Technical University,</a><div>Electromechanical engineering,</div><div class="date">2020 - in progress</div></li>
+                        </ul>
+                    </div>
+                    <div class="courses">
+                        <p>Courses:</p>
+                        <ul class="crss">
+                            <li><a href="https://rs.school/js-stage0/">JavaScript/Front-end (Stage 0),</a>
+                                <div>The Rolling Scopes</div>
+                                <div class="date">2023 - in progress</div>
+                            </li>
+                            <li><a href="https://school.engineers2030.ru/">Engineering School of The Union State of Belarus and Russia,</a>
+                                <div><a href="https://novsu.ru">Yaroslav-The-Wise Novgorod State University,</a></div>
+                                <div>Development of complexes for the location of objects and environments,</div>
+                                <div class="date">April 17 - April 30 2023</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><div class="blue">&lt;&nbsp;</div>HTML, CSS<div class="blue">&nbsp;&sol;&gt;</div></li>
+                    <li><div class="blue">&lt;&nbsp;</div>JavaScript, React, Node.JS<div class="blue">&nbsp;&sol;&gt;</div></li>
+                    <li><div class="blue">&lt;&nbsp;</div>Git, GitHub<div class="blue">&nbsp;&sol;&gt;</div></li>
+                    <li><div class="blue">&lt;&nbsp;</div>VS Code, Visual Studio, WebStorm<div class="blue">&nbsp;&sol;&gt;</div></li>
+                    <li><div class="blue">&lt;&nbsp;</div>Figma; Adobe Photoshop, Illustrator<div class="blue">&nbsp;&sol;&gt;</div></li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h2>Languages</h2>
+                <ul class="lang">
+                    <li>Russian&nbsp;&mdash;&nbsp;
+                        <div class="date">Native speaker</div>
+                    </li>
+                    <li>Belarussian&nbsp;&mdash;&nbsp;
+                        <div class="date">Native speaker</div>
+                    </li>
+                    <li>English&nbsp;&mdash;&nbsp;
+                        <div class="date">B2 (upper intermediate)</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="code" id="code">
+                <h2>Code example</h2>
+                <a href="https://www.codewars.com/kata/57eae65a4321032ce000002d"><h3>Fake Binary</h3></a>
+                <p>
+                    Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+                </p>
+                <pre>
+function fakeBin(x){
+    let res = ''
+    let temp = x.split('')
+    temp.forEach ((item)=>{
+        if(item &lt; 5){res += '0'}
+        else {res += '1'}
+    })
+    return res
+}
+                </pre>
+            </div>
+            <div class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="allProj">
+                    <div class="proj1">
+                        <a href="https://www.figma.com/proto/wCdG7ge2B9mp1hkhviXrjD/Vincent-van-Gogh?page-id=0%3A1&node-id=3-8&scaling=min-zoom&starting-point-node-id=3%3A8&mode=design&t=VWznA8qmHnnGCMni-1"><img src="images/projects-preview/vanGogh.png" alt="Vincent van Gogh" class="vanGogh"></a>
+                    </div>
+                    <div class="proj2">
+                        <a href="https://demvicc.github.io/ghibli/"><img src="images/projects-preview/ghibli.png" alt="ghibli" class="ghibli"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="logos">
+                <a href="https://github.com/demvicc"><img src="images/Logos/GitHub.svg" alt="Github" class="gitlogo"></a>
+            </div>
+            <div class="footerText">
+                2023<br>Viktar Dzemidovich
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

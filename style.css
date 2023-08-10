@@ -1,0 +1,202 @@
+/*-------------------general------------------*/
+body{
+    margin: 0;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+.container{
+    /* max-width: 1366px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: #202020 0.9;
+}
+a{
+    margin: 0;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+a, p, li, pre {
+    transition: 0.5s;
+    color: #eeffff;
+}
+img{
+    height: 300px;
+}
+h1, h2, h3{
+    /* font-family: 'Lora', serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #eeffff;
+}
+p, li{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+a:hover{
+    transition: 0.5s;
+    color: #c3db60;
+}
+.mainScreen, .contact, .abtme, .education, .skills, .languages, .code, .projects{
+    margin-bottom: 100px;
+} 
+/* ---------------------header---------------------------*/
+
+header ul{
+    margin-top: 0;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    /* color: #ea572e; */
+    color:#eeffff;
+    font-weight: 300;
+    font-size: 20px;
+}
+header a:hover{
+    transition: .5s;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: #c3db60;
+}
+/*------------------------main---------------------*/
+.mainScreen{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mainScreen h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.mainScreen h1, .mainScreen h2{
+    color: #eeffff;
+}
+.mainScreen h2{
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0;
+    font-weight: 100;
+    font-size: 30px;
+}
+.contact ul{
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.red{
+    color: #ee7857;
+    margin: 0;
+}
+/*-------------- about me -------------------*/
+.about p{
+    padding: 0 30px;
+}
+.education li{
+    list-style-type: "\003E\0020";
+}
+.education{
+    display: flex;
+    justify-content: space-between;
+}
+.education p{
+    margin-top: 0;
+    /* color: #ea572e; */
+    color: #ee7857;
+}
+ .about h3{
+    padding: 0;
+ }
+.date{
+    color: #c792ea
+}
+.crss li:first-child{
+    margin-bottom: 50px;
+}
+/*-------------- skills -------------------*/
+
+.skills ul{
+    padding: 0 30px;
+}
+
+.skills ul li{
+    display: flex;
+    margin-bottom: 5px;
+    color: #ee7857;
+}
+.blue{
+    color: #89ddff;
+}
+/* ---------------------languages-------------- */
+.lang li{
+    /* list-style-type: "\003E\0020"; */
+    display: flex;
+}
+/*------------------- code example --------------------------*/
+.code h3{
+    font-size: 25px;
+    color: #eeffff;
+}
+.code p, h3{
+    padding: 0 30px;
+}
+
+.code pre{
+    font-size: 16px;
+    width: fit-content;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #212121;
+    border-radius: 15px;
+
+    display: block;
+
+}
+/* ----------------------------Projects-------------------------- */
+.projects img{
+    display: block;
+    transition: 1s;
+}
+.projects img:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+.allProj{
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* ------------------------------------footer----------------------- */
+footer{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+.logos img{
+    filter: invert(1);
+    height: 50px;
+}
+.gitlogo{
+    filter: invert(1);
+    margin-right: 50px;
+}
+.footerText{
+    font-family: 'Nunito', sans-serif;
+    color: #eeffff;
+    text-align: right;
+}
