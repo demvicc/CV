@@ -162,19 +162,50 @@ header a:hover{
 
 }
 /* ----------------------------Projects-------------------------- */
-.projects img{
+/* .projects img{
     display: block;
     transition: 1s;
 }
 .projects img:hover{
     scale: 1.1;
     transition: 1s;
-}
+} */
 .allProj{
     padding: 0 30px;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.projects hr{
+    margin: 30px 0;
+}
+
+.proj{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projName{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.projects h3{
+    font-size: 30px;
+    padding: 0;
+}
+
+/* .graphWrapper{
+    display: flex;
+} */
+
+.graphWrapper .proj{
+    margin-right: 20px;
+}
+
+.graphDesign img{
+    height: 450px;
 }
 /* ------------------------------------footer----------------------- */
 footer{
