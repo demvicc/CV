@@ -1,14 +1,15 @@
 /*-------------------general------------------*/
 body{
     margin: 0;
-    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background-color: #222222;
+    /* background-color: #302f2c; */
+    /* background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%); */
 }
 .container{
     /* max-width: 1366px; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
-    background-color: #202020 0.9;
 }
 a{
     margin: 0;
@@ -19,17 +20,20 @@ li{
 }
 a, p, li, pre {
     transition: 0.5s;
-    color: #eeffff;
+    color: #efede3;
+    /* color: #eeffff; */
 }
 img{
     height: 300px;
 }
 h1, h2, h3{
     /* font-family: 'Lora', serif; */
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Zalando Sans Expanded', sans-serif;
     font-weight: 400;
     font-size: 36px;
-    color: #eeffff;
+    color: #efede3;
+    /* color: #eeffff; */
 }
 p, li{
     font-family: 'Nunito', sans-serif;
@@ -39,11 +43,19 @@ p, li{
 a:hover{
     transition: 0.5s;
     color: #c3db60;
+    /* color: #c2d8c4; */
 }
 .mainScreen, .contact, .abtme, .education, .skills, .languages, .code, .projects{
     margin-bottom: 100px;
 } 
 /* ---------------------header---------------------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(34, 34, 34, 0.9);
+    width: 100%;
+}
 
 header ul{
     margin-top: 0;
@@ -81,7 +93,7 @@ header a:hover{
     color: #eeffff;
 }
 .mainScreen h2{
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
     margin-top: 0;
     font-weight: 100;
     font-size: 30px;
@@ -112,7 +124,7 @@ header a:hover{
     /* color: #ea572e; */
     color: #ee7857;
 }
- .about h3{
+.about h3{
     padding: 0;
  }
 .date{
@@ -121,6 +133,12 @@ header a:hover{
 .crss li:first-child{
     margin-bottom: 50px;
 }
+
+.double{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*-------------- skills -------------------*/
 
 .skills ul{
