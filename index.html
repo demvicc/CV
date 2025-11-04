@@ -19,16 +19,30 @@
     <title>CV, Viktar Dzemidovich</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#contact">&#35;Contact</a></li>
-                    <li><a href="#about">&#35;About</a></li>
-                    <li><a href="#skills">&#35;Skills</a></li>
-                    <li><a href="#code">&#35;Code</a></li>
-                    <li><a href="#projects">&#35;Projects</a></li>
-                </ul>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!-- <div class="burger"> -->
+                        <input type="checkbox" id="menuCheckbox"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <!-- </div> -->
+                    
+
+                    <ul id="menu">
+                        <li><a href="#container">&#35;Home</a></li>
+                        <li><a href="#contact">&#35;Contact</a></li>
+                        <li><a href="#about">&#35;About</a></li>
+                        <li><a href="#skills">&#35;Skills</a></li>
+                        <!-- <li><a href="#code">&#35;Code</a></li> -->
+                        <li><a href="#projects">&#35;Projects</a></li>
+                    </ul>
+                </div>
+
+                <a id="nav-logo" href="#container">demvicc</a>
+                
             </nav>
         </header>
         <main>
@@ -42,12 +56,15 @@
             
             <div class="contact" id="contact">
                 <h2>Contact information</h2>
-                <ul>
-                    <li><p class="red">Phone number:</p><a href="tel:+375299829244">+375299829244</a></li>
-                    <li><p class="red">Email:</p><a href="mailto:demvicc@gmail.com" target="_blank">demvicc@gmail.com</a></li>
-                    <li><p class="red">Telegram:</p><a href="https://t.me/demvicc" target="_blank">&commat;demvicc</a></li>
-                    <li><p class="red">GitHub:</p><a href="https://github.com/demvicc" target="_blank">&commat;demvicc</a></li>
-                </ul>
+                <!-- <address> -->
+                    <ul>
+                        <li><p class="subhead">Phone number:</p><a href="tel:+375299829244">+375299829244</a></li>
+                        <li><p class="subhead">Email:</p><a href="mailto:demvicc@gmail.com" target="_blank">demvicc@gmail.com</a></li>
+                        <li><p class="subhead">Telegram:</p><a href="https://t.me/demvicc" target="_blank">&commat;demvicc</a></li>
+                        <li><p class="subhead">GitHub:</p><a href="https://github.com/demvicc" target="_blank">&commat;demvicc</a></li>
+                    </ul>
+                <!-- </address> -->
+                
             </div>
 
             <div class="about" id="about">
@@ -62,60 +79,73 @@
                 </div>
                 
                 <h3>Education</h3>
-                <div class="education">
+                <div class="education" id="education">
                     <div class="university">
-                        <p>University:</p>
+                        <p class="subhead">University:</p>
                         <ul class="uni">
-                            <li><a href="https://bntu.by">Belarusian National Technical University,</a>
+                            <li><b><a href="https://bntu.by">Belarusian National Technical University,</a></b>
                                 <div>Electromechanical engineering,</div>
-                                <div class="date">September 2020 - June 2024</div>
+                                <div class="highlight">September 2020 - June 2024</div>
                             </li>
-                            <p></p>
-                            <li>Military service,
-                                <div>Armed Forces of the Republic of Belarus,</div>
+                            <li>
+                                <!-- Military service, -->
+                                <b><div>Armed Forces of the Republic of Belarus,</div></b>
                                 <div>Radiotelegraphist,</div>
-                                <div class="date">October 2024 - October 2025</div>
+                                <div class="highlight">October 2024 - October 2025</div>
                             </li>
                         </ul>
                     </div>
                     <div class="courses">
-                        <p>Courses:</p>
+                        <p class="subhead">Courses:</p>
                         <ul class="crss">
                             <!-- <li><a href="https://rs.school/js-stage0/">JavaScript/Front-end (Stage 0),</a>
                                 <div>The Rolling Scopes</div>
-                                <div class="date">2023 - in progress</div>
+                                <div class="highlight">2023 - in progress</div>
                             </li> -->
-                            <li><a href="https://school.engineers2030.ru/">Engineering School of The Union State of Belarus and Russia,</a>
-                                <div><a href="https://novsu.ru">Yaroslav-The-Wise Novgorod State University,</a></div>
+                            <li>
+                                <!-- <a href="https://school.engineers2030.ru/">Engineering School of The Union State of the 
+                                Republic of Belarus and Russian Federation,</a> -->
+                                <b><div><a href="https://novsu.ru">Yaroslav-The-Wise Novgorod State University,</a></div></b>
                                 <div>Development of complexes for the location of objects and environments,</div>
-                                <div class="date">April 17 - April 30, 2023</div>
+                                <div class="highlight">April 17 - April 30, 2023</div>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- <h3>Career path</h3> -->
             </div>
             <div class="double"> 
                 <div class="skills" id="skills">
-                    <h2>Skills</h2>
+                    <h2>Hard skills</h2>
+
                     <ul>
+                        <li>HTML, CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git, GitHub</li>
+                        <li>VS Code, Visual Studio, JetBrains WebStorm</li>
+                        <li>Figma, Adobe Photoshop, Adobe Illustrator</li>
+                    </ul>
+                    
+                    <!-- <ul>
                         <li><div class="blue">&lt;&nbsp;</div>HTML, CSS<div class="blue">&nbsp;&sol;&gt;</div></li>
                         <li><div class="blue">&lt;&nbsp;</div>JavaScript<div class="blue">&nbsp;&sol;&gt;</div></li>
                         <li><div class="blue">&lt;&nbsp;</div>Git, GitHub<div class="blue">&nbsp;&sol;&gt;</div></li>
                         <li><div class="blue">&lt;&nbsp;</div>VS Code, Visual Studio, JetBrains WebStorm<div class="blue">&nbsp;&sol;&gt;</div></li>
                         <li><div class="blue">&lt;&nbsp;</div>Figma; Adobe Photoshop, Adobe Illustrator<div class="blue">&nbsp;&sol;&gt;</div></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="languages">
                     <h2>Languages</h2>
                     <ul class="lang">
                         <li>Russian&nbsp;&mdash;&nbsp;
-                            <div class="date">Native speaker</div>
+                            <span class="highlight">Native speaker</span>
                         </li>
                         <li>Belarussian&nbsp;&mdash;&nbsp;
-                            <div class="date">Native speaker</div>
+                            <span class="highlight">Native speaker</span>
                         </li>
                         <li>English&nbsp;&mdash;&nbsp;
-                            <div class="date">B2 (upper intermediate)</div>
+                            <span class="highlight">B2 (upper intermediate)</span>
                         </li>
                     </ul>
                 </div>  
@@ -141,7 +171,7 @@ function fakeBin(x){
             </div> -->
             <div class="projects" id="projects">
                 <h2>Projects</h2>
-                <h3>████████ Under construction ████████</h3>
+                <h3>████████ <br> Under construction <br> ████████</h3>
                 <!-- <div class="allProj">
                     <div class="web">
                         <h3>Web Design</h3>

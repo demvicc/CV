@@ -1,53 +1,100 @@
 /*-------------------general------------------*/
-body{
-    margin: 0;
-    background-color: #222222;
-    /* background-color: #302f2c; */
-    /* background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%); */
+@layer general{
+    * {
+    scroll-behavior: smooth;
+    --text-color:#efede3;
+    --link-hover:#c3db60;
+    --contrast-white: #eeffff;
+
+    --color-subhead: #ee7857;
+    --color-highlight: #c792ea;
+
+    --font-main: 'Zalando Sans Expanded', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+
+    --burger-height: 33px;
+    --burger-width: 40px;
+    }
+
+    body{
+        max-width: 100%;
+        margin: 0;
+        background-color: #222222;
+        /* background-color: #302f2c; */
+        /* background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%); */
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    #menuCheckbox, #nav-logo{
+        display: none;
+    }
+
+    a{
+        margin: 0;
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a, p, li, pre {
+        transition: 0.5s;
+        color: var(--text-color);
+    }
+
+    b{
+        font-weight: 800;
+    }
+
+    img{
+        height: 300px;
+    }
+
+    h1, h2, h3{
+        font-family: var(--font-main);
+        color: var(--text-color);
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2,h3{
+        font-size: 36px;
+    }
+
+    p, li{
+        font-family: var(--font-text);
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    a:hover{
+        transition: 0.5s;
+        color: var(--link-hover);
+    }
+
+    .mainScreen, .contact, .abtme, .education, .skills, .languages, .code, .projects{
+        margin-bottom: 100px;
+    }
+
+    .subhead{
+        color: var(--color-subhead);
+    }
+
+    .highlight{
+        color: var(--color-highlight);
+    }
 }
-.container{
-    /* max-width: 1366px; */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-a{
-    margin: 0;
-    text-decoration: none;
-}
-li{
-    list-style: none;
-}
-a, p, li, pre {
-    transition: 0.5s;
-    color: #efede3;
-    /* color: #eeffff; */
-}
-img{
-    height: 300px;
-}
-h1, h2, h3{
-    /* font-family: 'Lora', serif; */
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Zalando Sans Expanded', sans-serif;
-    /* font-weight: 400; */
-    font-size: 36px;
-    color: #efede3;
-    /* color: #eeffff; */
-}
-p, li{
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-}
-a:hover{
-    transition: 0.5s;
-    color: #c3db60;
-    /* color: #c2d8c4; */
-}
-.mainScreen, .contact, .abtme, .education, .skills, .languages, .code, .projects{
-    margin-bottom: 100px;
-} 
+
+
+
 /* ---------------------header---------------------------*/
 
 header{
@@ -58,25 +105,28 @@ header{
 }
 
 header ul{
-    margin-top: 0;
+    margin: 0;
     padding: 30px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 header a{
-    /* color: #ea572e; */
-    color:#eeffff;
+    color:var(--text-color);
     font-weight: 300;
     font-size: 20px;
 }
+
 header a:hover{
     transition: .5s;
     text-decoration: underline;
     text-underline-offset: 5px;
-    text-decoration-color: #c3db60;
+    text-decoration-color: var(--link-hover);
 }
+
 /*------------------------main---------------------*/
+
 .mainScreen{
     height: 60vh;
     display: flex;
@@ -84,55 +134,64 @@ header a:hover{
     align-items: center;
     justify-content: space-evenly;
 }
+
 .mainScreen h1{
-    font-size: 50px;
     margin-bottom: 10px;
 }
 
 .mainScreen h1, .mainScreen h2{
-    color: #eeffff;
+    color: var(--contrast-white);
 }
+
 .mainScreen h2{
-    /* font-family: 'Nunito', sans-serif; */
     margin-top: 0;
     font-weight: 100;
-    font-size: 30px;
 }
+
 .contact ul{
     padding: 0 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.red{
-    color: #ee7857;
+
+.contact .subhead{
     margin: 0;
 }
+
 /*-------------- about me -------------------*/
+
 .about p{
     padding: 0 30px;
 }
+
 .education li{
     list-style-type: "\003E\0020";
 }
+
+.education li:not(:last-child){
+    margin-bottom: 15px;
+}
+
 .education{
     display: flex;
     justify-content: space-between;
 }
+
 .education p{
     margin-top: 0;
-    /* color: #ea572e; */
-    color: #ee7857;
+    color: var(--color-subhead);
+    font-family: var(--font-main);
+    font-weight: 300;
 }
+
 .about h3{
     padding: 0;
  }
-.date{
-    color: #c792ea
-}
-.crss li:first-child{
+
+/* .crss li:first-child{
     margin-bottom: 50px;
-}
+} */
 
 .double{
     display: flex;
@@ -141,28 +200,33 @@ header a:hover{
 
 /*-------------- skills -------------------*/
 
-.skills ul{
+/* .skills ul{
     padding: 0 30px;
-}
+} */
 
 .skills ul li{
-    display: flex;
     margin-bottom: 5px;
-    color: #ee7857;
+    /* color: #ee7857; */
+    list-style-type: "\003E\0020";
 }
-.blue{
+
+/* .blue{
     color: #89ddff;
-}
+} */
+
 /* ---------------------languages-------------- */
-.lang li{
-    /* list-style-type: "\003E\0020"; */
-    display: flex;
+
+.languages li{
+    list-style-type: "\003E\0020";
 }
+
 /*------------------- code example --------------------------*/
-.code h3{
+
+/* .code h3{
     font-size: 25px;
     color: #eeffff;
 }
+
 .code p, h3{
     padding: 0 30px;
 }
@@ -175,22 +239,24 @@ header a:hover{
     margin-left: auto;
     background-color: #212121;
     border-radius: 15px;
-
     display: block;
+} */
 
-}
 /* ----------------------------Projects-------------------------- */
+
 /* .projects img{
     display: block;
     transition: 1s;
 }
+
 .projects img:hover{
     scale: 1.1;
     transition: 1s;
 } */
-.allProj{
+
+/* .allProj{
     padding: 0 30px;
-    /* display: flex; */
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -207,25 +273,23 @@ header a:hover{
 .projName{
     font-size: 25px;
     font-weight: 400;
-}
+ } */
 
 .projects h3{
-    font-size: 30px;
-    padding: 0;
+    font-weight: 300;
+    color: var(--color-subhead);
 }
 
-/* .graphWrapper{
-    display: flex;
-} */
-
-.graphWrapper .proj{
+/* .graphWrapper .proj{ 
     margin-right: 20px;
 }
 
 .graphDesign img{
     height: 450px;
-}
+} */
+
 /* ------------------------------------footer----------------------- */
+
 footer{
     display: flex;
     height: 100px;
@@ -240,12 +304,181 @@ footer{
     filter: invert(1);
     height: 50px;
 }
+
 .gitlogo{
     filter: invert(1);
     margin-right: 50px;
 }
+
 .footerText{
     font-family: 'Nunito', sans-serif;
-    color: #eeffff;
+    color: var(--contrast-white);
     text-align: right;
+}
+
+/* ------------------------------------responsive----------------------- */
+
+@media (max-width: 600px){
+    /* -------------------------------------------BURGER MENU TOGGLE----------------------------------  */
+    nav{
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    #nav-logo{
+        display: block;
+        font-family: var(--font-main);
+        color: var(--contrast-white);
+        font-weight: 600;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    #menuToggle{
+        /* display: block;
+        position: relative; */
+        top: 50px;
+        
+        z-index: 1;
+        
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a{
+        text-decoration: none;
+        /* color: #232323; */
+        color: var(--contrast-white);
+        
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle input{
+        display:block;
+        width: var(--burger-width);
+        height: var(--burger-height);
+        position: absolute;
+        margin: 0;
+        
+        cursor: pointer;
+        
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+        
+        -webkit-touch-callout: none;
+    }
+
+    /* Just a quick hamburger*/
+    #menuToggle span{
+        display: block;
+        width: var(--burger-width);
+        height: 2px;
+        margin-bottom: 10px;
+        position: relative;
+        
+        background: var(--contrast-white);
+        border-radius: 3px;
+        
+        z-index: 1;
+        
+        transform-origin: 0px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child{
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2){
+        transform-origin: 0% 100%;
+    }
+
+    /* Transform all the slices of hamburger into a crossmark */
+    #menuToggle input:checked ~ span{
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, -5px);
+        /* background: #232323; */
+        background: var(--contrast-white);
+    }
+
+    /*But let's hide the middle one */
+    #menuToggle input:checked ~ span:nth-last-child(3){
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /* Oh yeah and the last one should go the other direction */
+    #menuToggle input:checked ~ span:nth-last-child(2){
+        transform: rotate(-45deg) translate(0, 2px);
+    }
+
+    /* Make this absolute positioned at the top left of the screen */
+    #menu{
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+
+        /* width: 100vw;
+        height: 20vh; */
+        /* max-width: 400px;
+        max-height: 100vh; */
+        margin: 0;
+        padding: 0 15px 15px 0;
+        /* padding-top: 125px; */
+        box-sizing: border-box;
+        overflow-y: auto;
+        /* background: #ededed; */
+        background-color: rgb(34, 34, 34, 0.9);
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        
+        transform-origin: 0% 0%;
+        transform: translate(-200%, 0);
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    /*And let's slide it in from the left*/
+    #menuToggle input:checked ~ ul{
+        transform: none;
+    }
+    /* ------------------------------------END OF BURGER MENU TOGGLE------------------------------- */
+
+    h1,h2,h3{
+        font-size: 24px;
+    }
+
+    #contact ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contact li:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    #about p{
+        text-align: justify;
+    }
+
+    .education{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .double{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
