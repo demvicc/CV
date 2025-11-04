@@ -1,5 +1,4 @@
 /*-------------------general------------------*/
-@layer general{
     * {
     scroll-behavior: smooth;
     --text-color:#efede3;
@@ -91,8 +90,6 @@
     .highlight{
         color: var(--color-highlight);
     }
-}
-
 
 
 /* ---------------------header---------------------------*/
@@ -165,6 +162,10 @@ header a:hover{
     padding: 0 30px;
 }
 
+.about h3{
+    padding: 0;
+}
+
 .education li{
     list-style-type: "\003E\0020";
 }
@@ -185,9 +186,7 @@ header a:hover{
     font-weight: 300;
 }
 
-.about h3{
-    padding: 0;
- }
+.university
 
 /* .crss li:first-child{
     margin-bottom: 50px;
