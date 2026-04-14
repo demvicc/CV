@@ -91,6 +91,10 @@
         color: var(--color-highlight);
     }
 
+    #contact, #about, #skills, #projects{
+        scroll-margin-top: 100px;
+    }
+
 
 /* ---------------------header---------------------------*/
 
@@ -186,12 +190,6 @@ header a:hover{
     font-weight: 300;
 }
 
-.university
-
-/* .crss li:first-child{
-    margin-bottom: 50px;
-} */
-
 .double{
     display: flex;
     justify-content: space-between;
@@ -199,19 +197,12 @@ header a:hover{
 
 /*-------------- skills -------------------*/
 
-/* .skills ul{
-    padding: 0 30px;
-} */
 
 .skills ul li{
     margin-bottom: 5px;
     /* color: #ee7857; */
     list-style-type: "\003E\0020";
 }
-
-/* .blue{
-    color: #89ddff;
-} */
 
 /* ---------------------languages-------------- */
 
@@ -320,7 +311,6 @@ footer{
 @media (max-width: 600px){
     /* -------------------------------------------BURGER MENU TOGGLE----------------------------------  */
     nav{
-        /* padding: 15px 0; */
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -404,7 +394,7 @@ footer{
     /* Transform all the slices of hamburger into a crossmark */
     #menuToggle input:checked ~ span{
         opacity: 1;
-        transform: rotate(45deg) translate(0px, -5px);
+        transform: rotate(45deg) translate(0px, -3px);
         /* background: #232323; */
         background: var(--contrast-white);
     }
@@ -424,18 +414,15 @@ footer{
     #menu{
         flex-direction: column;
         align-items: flex-start;
-        position: absolute;
+        position: fixed;
 
-        /* width: 100vw;
-        height: 20vh; */
-        /* max-width: 400px;
-        max-height: 100vh; */
+        z-index: 100;
+
+        width: 100vw;
         margin: 15px 0 0 0;
         padding: 0 15px 15px 0;
-        /* padding-top: 125px; */
         box-sizing: border-box;
         overflow-y: auto;
-        /* background: #ededed; */
         background-color: rgb(34, 34, 34, 0.9);
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
@@ -458,7 +445,25 @@ footer{
     /* ------------------------------------END OF BURGER MENU TOGGLE------------------------------- */
 
     h1,h2,h3{
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    /* .backdrop{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        z-index: 99;
+    } */
+
+    header #menu{
+        display: block;
+    }
+
+    #menu a{
+        font-size: 30px;
     }
 
     #contact ul{
