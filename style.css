@@ -170,8 +170,12 @@ header a:hover{
     padding: 0;
 }
 
-.education li{
+.education li, .work li{
     list-style-type: "\003E\0020";
+}
+
+.tractor li{
+    list-style-type: 
 }
 
 .education li:not(:last-child){
